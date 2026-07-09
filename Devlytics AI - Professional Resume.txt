@@ -1,0 +1,54 @@
+Devlytics AI - Professional Resume Summary
+Project Overview
+Developer Performance Analytics & Prediction System | Machine Learning | Full-Stack Development
+
+Technical Summary (ATS-Optimized)
+Designed and developed an end-to-end machine learning application for predictive analytics and developer performance evaluation. Engineered a complete data pipeline with synthetic data generation, multi-algorithm model training, and an interactive web dashboard deployed on Streamlit.
+
+Key Achievements & Technical Skills
+Machine Learning & Data Science:
+
+Built and compared 4 ML algorithms (Logistic Regression, Decision Tree, Random Forest, XGBoost) using scikit-learn
+Achieved 86.67% accuracy with XGBoost classifier on 150 developer performance records
+Implemented data preprocessing pipeline including StandardScaler normalization and LabelEncoder for categorical encoding
+Performed feature importance analysis identifying Git Commits, Bug Fixes, and Experience as top predictors
+Generated 150 synthetic developer records with 15 performance metrics using numpy and pandas
+Full-Stack Development:
+
+Developed interactive 5-page Streamlit web dashboard with real-time ML predictions
+Built input form with 15 dynamic fields (sliders, spinbuttons) for developer performance metrics
+Implemented model caching and state management using st.cache_resource and st.cache_data for performance optimization
+Created interactive visualizations using Plotly Express (confidence charts, distribution graphs, analytics)
+Data Engineering:
+
+Designed and executed data pipeline from generation to model training to deployment
+Implemented model serialization using joblib for persistent storage of trained models and scalers
+Managed CSV-based data storage and processing workflows
+Handled dependency management and version control for all Python packages
+Software Development Practices:
+
+Debugged and resolved critical errors including numpy compatibility issues, label encoding errors, and variable naming inconsistencies
+Implemented production-ready code with proper error handling
+Modularized application into separate components (data generation, training, deployment)
+Technical Stack
+Languages & Frameworks: Python 3.11, Streamlit 1.26.0
+
+ML/Data Libraries: scikit-learn 1.3.0, XGBoost 2.0.0, pandas 2.0.3, numpy 1.26.0, joblib
+
+Visualization: Plotly 5.15.0, Matplotlib
+
+Deployment: Localhost web application with responsive UI
+
+Project Deliverables
+✅ Automated data generation system for 150 synthetic developer profiles
+✅ Multi-algorithm ML model comparison and selection framework
+✅ Production-ready XGBoost classifier with 86.67% prediction accuracy
+✅ Interactive web dashboard with prediction engine and team analytics
+✅ Real-time confidence scoring and developer insights generation
+✅ Fully functional analytics dashboard with performance distribution visualization
+
+Keywords for ATS (Copy-Paste for Applications)
+Machine Learning | Python | Data Science | XGBoost | scikit-learn | Predictive Analytics | Streamlit | Data Pipeline | Feature Engineering | Model Training | Data Preprocessing | Pandas | NumPy | Plotly Visualization | Web Application Development | ML Model Deployment | Classification | Data Analysis | Full-Stack Development | Software Engineering
+
+LinkedIn/Resume Headline Option
+"Built end-to-end ML predictive analytics system achieving 86.67% accuracy with Streamlit dashboard and XGBoost classifier"
