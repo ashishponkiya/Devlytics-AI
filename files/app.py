@@ -16,8 +16,12 @@ import joblib
 import plotly.graph_objects as go
 import plotly.express as px
 from sklearn.preprocessing import StandardScaler
+import os
 import warnings
 warnings.filterwarnings('ignore')
+
+# Base directory (where this script lives)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # ============================================
 # PAGE CONFIG
@@ -36,9 +40,9 @@ st.set_page_config(
 def load_model():
     """Load trained model, scaler, and features"""
     try:
-        model = joblib.load('best_model.pkl')
-        scaler = joblib.load('scaler_universal.pkl')
-        features = joblib.load('features.pkl')
+        model = joblib.load(os.path.join(BASE_DIR, 'best_model.pkl'))
+        scaler = joblib.load(os.path.join(BASE_DIR, 'scaler_universal.pkl'))
+        features = joblib.load(os.path.join(BASE_DIR, 'features.pkl'))
         return model, scaler, features
     except FileNotFoundError:
         st.error("⚠️ Model files not found! Run 01_generate_data.py and 02_train_model.py first.")
@@ -48,7 +52,7 @@ def load_model():
 def load_data():
     """Load original dataset"""
     try:
-        return pd.read_csv('developer_data.csv')
+        return pd.read_csv(os.path.join(BASE_DIR, 'developer_data.csv'))
     except FileNotFoundError:
         return None
 
