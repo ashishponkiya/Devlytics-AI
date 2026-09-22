@@ -1,4 +1,4 @@
-<![CDATA[<div align="center">
+<div align="center">
 
 # 🚀 Devlytics AI
 
@@ -78,6 +78,39 @@ The platform trains and compares **4 ML algorithms** (Logistic Regression, Decis
 
 ---
 
+## 🤖 AI & LLM Engineering Relevance
+
+Devlytics AI is designed as a foundation for building AI-powered product experiences that help customers access and understand their data using natural language.
+
+### AI-Powered Product Capabilities
+
+The project can be extended to support:
+
+- **Natural-language data access** — allow users to ask questions about developer and team data without working directly with complex dashboards or databases.
+- **AI-powered insights** — transform raw product data into useful insights, summaries, recommendations, and reports.
+- **LLM integration** — connect LLM APIs such as **OpenAI, Anthropic, or Gemini** to application workflows.
+- **AI agents and tool calling** — allow an AI agent to use APIs, databases, and backend services as tools to retrieve and analyze product data.
+- **Prompt engineering** — experiment with prompting approaches to improve accuracy, consistency, and reliability.
+- **API and database integration** — expose application data through APIs and connect AI systems with databases and existing backend services.
+- **AI-powered interfaces** — build conversational interfaces that make analytics easier to access for non-technical users.
+
+### Relevant AI Engineering Concepts
+
+- LLMs and **AI agents**
+- Natural-language interfaces
+- Prompt engineering
+- Tool calling
+- REST APIs
+- JSON
+- Backend services
+- Database integration
+- Data analysis and insight generation
+- AI-assisted software development
+
+> **Note:** The current Devlytics AI implementation focuses on machine-learning-based developer performance analytics. The LLM, AI-agent, and natural-language capabilities above describe the AI extension path for the product rather than claiming that every capability is already implemented.
+
+---
+
 ## 🛠 Tech Stack
 
 | Category | Technologies |
@@ -91,6 +124,26 @@ The platform trains and compares **4 ML algorithms** (Logistic Regression, Decis
 | **Authentication** | GitHub OAuth 2.0 |
 | **Serialization** | Joblib |
 | **Environment** | python-dotenv |
+| **AI / LLM Integration** | OpenAI, Anthropic, Gemini (integration-ready) |
+| **AI Engineering Concepts** | LLMs, AI Agents, Prompt Engineering, Tool Calling |
+| **Backend Integration** | REST APIs, JSON, Database Services |
+
+---
+
+## 🧩 Skills & Technologies Relevant to AI Product Development
+
+This project demonstrates practical experience with software development and data/ML workflows that are relevant to AI-powered product development:
+
+- **Python** and application development
+- **JavaScript** familiarity for AI-powered interfaces
+- **APIs and JSON** for connecting application services
+- **REST API** and backend integration concepts
+- **Machine Learning** model development and deployment
+- **Data processing and analytics** using Pandas and NumPy
+- **Database** integration using SQLite
+- **LLM and AI-agent concepts** for natural-language data access
+- **AI coding tools** such as Claude Code, OpenAI Codex, and similar tools as part of an AI-assisted development workflow
+- Building prototypes, testing ideas, debugging, and iterating on software
 
 ---
 
@@ -155,7 +208,7 @@ cp .env.example .env
 **7. Run the application**
 
 ```bash
-streamlit run app.py
+streamlit run files/app.py
 ```
 
 The app will open at **http://localhost:8501** 🎉
@@ -329,6 +382,16 @@ Demo login works out of the box — no configuration needed!
 
 ---
 
+## 📸 Screenshots
+
+> Add screenshots of the Devlytics AI dashboard here.
+
+Example:
+
+```markdown
+![Devlytics AI Dashboard](screenshots/dashboard.png)
+```
+
 ## 🤝 Contributing
 
 Contributions are welcome! Here's how to get started:
@@ -360,4 +423,3 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 Built with ❤️ using Python, Streamlit, and Machine Learning
 
 </div>
-]]>
