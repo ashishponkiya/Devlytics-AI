@@ -412,6 +412,15 @@ elif page == "🔮 Make Prediction":
             prediction = model.predict(input_data)[0]
             probabilities = model.predict_proba(input_data)[0]
 
+            # Check if prediction is numeric (from models like XGBoost that require numeric targets)
+            original_prediction = prediction
+            if isinstance(prediction, (np.integer, int, np.int32, np.int64)):
+                class_mapping = {0: 'Average', 1: 'Excellent', 2: 'Good', 3: 'Poor'}
+                prediction = class_mapping.get(int(prediction), prediction)
+                class_names = [class_mapping.get(int(c), c) for c in model.classes_]
+            else:
+                class_names = model.classes_
+
             st.success("✅ Prediction Complete!")
 
             col1, col2 = st.columns([1, 2])
@@ -422,12 +431,12 @@ elif page == "🔮 Make Prediction":
                 st.metric("Predicted Performance", f"{color} {prediction}")
 
             with col2:
-                class_names = model.classes_
                 fig = go.Figure(data=[
                     go.Bar(
                         x=class_names, y=probabilities,
                         marker_color=['#00ff00', '#0080ff', '#ffcc00', '#ff4444'],
                         text=[f"{p*100:.1f}%" for p in probabilities],
+
                         textposition='outside'
                     )
                 ])
